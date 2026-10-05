@@ -16,3 +16,13 @@ public class GroceryCalculator {
 	         double[] weeklyBills = new double[4];
 	        double totalWithoutCoupon = 0.0;
 	        
+	        for (int i = 0; i < 4; i++) {
+	            System.out.print("Enter grocery bill for Week " + (i + 1) + ": $");
+	            weeklyBills[i] = scanner.nextDouble();
+	            totalWithoutCoupon += weeklyBills[i];
+	        }
+			double averageWeeklyWithoutCoupon = totalWithoutCoupon / 4.0;
+	        
+	        double totalWithCoupon = totalWithoutCoupon * (1.0 - coupon);
+	        double averageWeeklyWithCoupon = totalWithCoupon / 4.0;
+	        
