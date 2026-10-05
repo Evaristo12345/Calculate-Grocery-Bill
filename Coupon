@@ -28,3 +28,14 @@ public class GroceryCalculator {
 	        
 			System.out.println("\n--- Grocery Bill Summary (Family of 4) ---");
 	        System.out.printf("Coupon Rate Applied: %.1f%%\n\n", (coupon * 100));
+	        System.out.println("Without Coupon:");
+	        System.out.printf("  Monthly Total:  $%.2f\n", totalWithoutCoupon);
+	        System.out.printf("  Weekly Average: $%.2f\n\n", averageWeeklyWithoutCoupon);
+	        
+	        System.out.println("With Coupon:");
+	        System.out.printf("  Monthly Total:  $%.2f\n", totalWithCoupon);
+	        System.out.printf("  Weekly Average: $%.2f\n", averageWeeklyWithCoupon);
+	        
+	        scanner.close();
+	    }
+}
