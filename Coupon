@@ -26,3 +26,5 @@ public class GroceryCalculator {
 	        double totalWithCoupon = totalWithoutCoupon * (1.0 - coupon);
 	        double averageWeeklyWithCoupon = totalWithCoupon / 4.0;
 	        
+			System.out.println("\n--- Grocery Bill Summary (Family of 4) ---");
+	        System.out.printf("Coupon Rate Applied: %.1f%%\n\n", (coupon * 100));
