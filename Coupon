@@ -5,3 +5,12 @@ public class GroceryCalculator {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the coupon amount as a decimal (Example: 0.10 for 10%): ");
 	        double coupon = scanner.nextDouble();
+
+			 System.out.print("Enter the coupon amount as a decimal (Example: 0.10 for 10%): ");
+	        double coupon = scanner.nextDouble();
+	        
+	        if (coupon > 1.0 || coupon <= 0.0) {
+	            coupon = 0.10;
+	            System.out.println("Invalid coupon entered. Defaulting to 10% (0.10).");
+	        }
+	        
