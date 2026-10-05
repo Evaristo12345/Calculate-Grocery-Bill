@@ -13,4 +13,6 @@ public class GroceryCalculator {
 	            coupon = 0.10;
 	            System.out.println("Invalid coupon entered. Defaulting to 10% (0.10).");
 	        }
+	         double[] weeklyBills = new double[4];
+	        double totalWithoutCoupon = 0.0;
 	        
