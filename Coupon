@@ -3,3 +3,5 @@ import java.util.Scanner;
 public class GroceryCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the coupon amount as a decimal (Example: 0.10 for 10%): ");
+	        double coupon = scanner.nextDouble();
